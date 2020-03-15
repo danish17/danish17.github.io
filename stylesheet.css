@@ -6,10 +6,23 @@
 }
 
 html{
+    overflow: visible;
     background-color: #091921;
+    background-image: url("res/background-tech-background.png");
+    background-size: 600px;
+    background-blend-mode: screen;
+}
+
+body{
+    height: 100%;
+    overflow: visible;
+    min-height: 100%;
 }
 
 #navbar{
+    position: sticky;
+    z-index: 1000;
+    top: 0;
     margin-top: 5px;
     padding: 10px 10px 10px 10px;
 }
@@ -29,7 +42,7 @@ ul#menu li{
 
 #navbar ul#menu li a:hover{
     transition: 0.2s all ease-in-out;
-    color:white;
+    color:#fbb03b;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -39,11 +52,11 @@ ul#menu li{
 
 #header{
     position: sticky;
+    display: flex;
     top: 0;
     padding: 20px 20px 20px 20px;
     display: flex;
     text-shadow: 2px;
-    height: 2000px;
 }
 
 #header img{
@@ -64,11 +77,54 @@ ul#menu li{
     opacity: 1;
 }
 
-#header p{
-    padding-left: 20px;
+#header #big_text{
     font-size: medium;
     color: aliceblue;
     font-family: 'Montserrat', sans-serif;
     font-size: 5vh;
     font-weight: 600;
 }
+
+#header #text{
+    display: block;
+    padding-left: 20px;
+}
+
+#header #small_text{
+    opacity: 0.8;
+    font-size: medium;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+    font-weight: 300;
+}
+
+#social_bar{
+    margin-left: -30px;
+    padding-top: 20px;
+}
+
+#social_bar ul#social li a{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#social_bar ul#social li,a{
+    opacity: 0.8;
+    font-size: 15px;
+    display: inline;
+    transition: 0.4s all ease-in-out;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+#social_bar ul#social li:hover,a:hover{
+    font-size: 15px;
+    display: inline;
+    transition: 0.4s all ease-in-out;
+    color:#fbb03b;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
