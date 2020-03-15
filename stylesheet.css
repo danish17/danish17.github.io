@@ -20,10 +20,11 @@ body{
 }
 
 #navbar{
+    top: 0;
     position: sticky;
     z-index: 1000;
-    top: 0;
     margin-top: 5px;
+    left:50%;
     padding: 10px 10px 10px 10px;
 }
 
@@ -51,11 +52,9 @@ ul#menu li{
 }
 
 #header{
-    position: sticky;
     display: flex;
     top: 0;
     padding: 20px 20px 20px 20px;
-    display: flex;
     text-shadow: 2px;
 }
 
@@ -128,3 +127,31 @@ ul#menu li{
     text-decoration: none;
 }
 
+#about{
+    padding: 20px 20px 20px 20px;
+}
+
+#about:hover #svg_1,#about:hover #header{
+    transition: 0.8s all ease-in-out;
+    opacity: 1;
+}
+
+#about #svg_1{
+    transition: 0.6s all ease-in-out;
+    padding: 20px 0px 0px 0px;
+    opacity: 0.5;
+    position: relative;
+    left:50%;
+    width: 600px;
+    height: 600px;
+}
+
+#about #header{
+    transition: 0.6s all ease-in-out;
+    position: relative;
+    opacity: 0.1;
+    font-size: 80px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
