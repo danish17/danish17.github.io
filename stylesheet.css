@@ -208,6 +208,41 @@ ul#menu li{
 .tiles li{
     display: inline;
 }
+#skills #inner_list{
+    position: relative;
+    display: inline-block !important;
+    padding: 10px 10px 10px 10px;
+}
+#skills ul{
+    margin-top: 20px;
+    transition: 0.3s all ease-in-out;
+    opacity: 0.5;
+} 
+
+#skills ul:hover{
+    transition: 0.6s all ease-in-out;
+    opacity: 0.8;
+} 
+
+#skills #inner_lis ul.skill_names{
+    display: inline;
+}
+
+#skills ul.skill_names{
+    opacity: 1;
+    font-family: 'Montserrat',sans-serif;
+    font-size:15px;
+}
+
+#skills ul.skill_names li{
+    cursor: pointer;
+    display:block;
+}
+
+#skills ul.skill_names li:hover{
+    color: #fbb03b;
+}
+
 
 @keyframes gradient {
 	0% {
