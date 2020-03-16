@@ -7,9 +7,11 @@
 
 html{
     overflow: visible;
-    background-color: #091921;
-    background-image: url("res/background-tech-background.png");
+    background: linear-gradient(-45deg, #091921, #091921, #132c36, #133d31);
+    /* background-image: url("res/background-tech-background.png"); */
     background-size: 600px;
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
     background-blend-mode: screen;
 }
 
@@ -19,9 +21,15 @@ body{
     min-height: 100%;
 }
 
+.separator{
+    content: " ";
+    height: 250px;
+    width: 100%;
+}
+
 #navbar{
-    top: 0;
-    position: sticky;
+    top: 10px;
+    position: fixed;
     z-index: 1000;
     margin-top: 5px;
     left:50%;
@@ -53,10 +61,39 @@ ul#menu li{
 
 #header{
     display: flex;
-    top: 0;
+    top: 0px;
+    position: relative;
     padding: 20px 20px 20px 20px;
     text-shadow: 2px;
 }
+
+#header #resume_btn{
+    transition: 0.3s all ease-in-out;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding: 5px 5px 5px 5px;
+    height: 40px;
+    width: auto;
+    background-color: #fbb03b;
+    border: none;
+    border-radius: 2%;
+    left:40px;
+    cursor: auto;
+    margin-top: 10px;
+}
+
+#header #resume_btn:hover{
+   transition: 0.3s all ease-in-out;
+   box-shadow: 5px 5px #091921;
+   background-color: #10193E;
+   color: white !important;
+   cursor: pointer;
+}
+
+#header #resume_btn:hover a{
+    color: white !important;
+ }
 
 #header img{
     transition: 0.7s all ease-in-out;
@@ -72,7 +109,7 @@ ul#menu li{
 
 
 #header #header_original:hover{
-    transition: 0.7s all ease-in-out;
+    transition: 1.2s all ease-in-out;
     opacity: 1;
 }
 
@@ -127,31 +164,59 @@ ul#menu li{
     text-decoration: none;
 }
 
-#about{
+.tiles{
+    transition: 0.9s all ease-in-out;
     padding: 20px 20px 20px 20px;
+    opacity: 0.2;
+    display: block;
 }
 
-#about:hover #svg_1,#about:hover #header{
+.tiles:hover{
     transition: 0.8s all ease-in-out;
     opacity: 1;
 }
 
-#about #svg_1{
-    transition: 0.6s all ease-in-out;
-    padding: 20px 0px 0px 0px;
-    opacity: 0.5;
-    position: relative;
+.tiles .svg{
+    padding: 0px 0px 0px 0px;
+    position: absolute;
     left:50%;
     width: 600px;
     height: 600px;
 }
 
-#about #header{
-    transition: 0.6s all ease-in-out;
+.tiles .header{
     position: relative;
-    opacity: 0.1;
     font-size: 80px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
+}
+
+.tiles .info_class{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    color: white;
+    left: 0;
+    padding: 20px 20px 20px 20px;
+}
+
+.tiles ul{
+    color: white;
+    font-size: 40px;
+}
+
+.tiles li{
+    display: inline;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

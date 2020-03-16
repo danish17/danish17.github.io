@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
     <title>Danish's Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" href="res/header_avatar.png" type="image/png" sizes="16x16">
@@ -12,8 +13,8 @@
     <center><div id = "navbar">
         <ul id="menu">
             <li> <a href="#about">About</a></li>
-            <li> <a href="#about">Work</a></li>
-            <li> <a href="#about">Skills</a></li>
+            <li> <a href="#skills">Skills & Tools</a></li>
+            <li> <a href="#about">Projects</a></li>
             <li> <a href="#about">Publications</a></li>
             <li> <a href="#about">Awards</a></li>
             <li> <a href="#about">Certifications</a></li>
@@ -38,13 +39,73 @@
                     <li><i class="fab fa-instagram"></i><a href="instagram.com/iamdanish17" target="_blank">Instagram</a></li>
                     <li><i class="fas fa-envelope"></i><a href="">danishshakeel54@gmail.com</a></li>
                 </ul>
+                <button id="resume_btn">
+                    <a href="">Download CV</a>
+                </button>
             </div>
         </div>
     </div>
 
-    <div id="about"> 
-        <p id="header">About</p>
-            <img src="res/svg/about_profile.svg" id="svg_1">
+    <div id="about" class="tiles"> 
+        <p class="header">About</p>
+        <img src="res/svg/about_profile.svg" class="svg">
+        <div class="info_class">
+            🍰 17 March, 2001
+        </p3>
+        <br>
+        <br>
+        <p3>
+            🍁 Kashmir, India
+        </p3>
+        <br>
+        <br>
+        <p3>
+            💼 Based in Chandigarh, India
+        </p3>
+        <br>
+        <br>
+        <p3>
+            📚 Bachelor of Computer Science Engineering, Chandigarh University
+        </p3>
+        <br>
+        <br>
+        <p3>
+            ⚽ Football, Books, Writing, Sketching, Science, Learning New Stuff
+        </p3>
+            
+    </div>
+    </div>
+
+    <div class="separator">
+
+    </div>
+
+    <div id="skills" class="tiles"> 
+        <p class="header">Skills & Tools</p>
+        <img src="res/svg/skills.svg" class="svg" id="svg2">
+            <ul id="skills_list" type="none">
+                <li><span class="iconify" data-icon="uil:robot" data-inline="false"></span></li>
+                <li><i class="fas fa-book-reader"></i></li>
+                <li><span class="iconify" data-icon="ic:baseline-data-usage" data-inline="false"></span></li>
+                <li><span class="iconify" data-icon="whh:design" data-inline="false"></span></li>
+                <li><span class="iconify" data-icon="whh:bringtofront" data-inline="false"></span></li>
+                <li><span class="iconify" data-icon="ic:baseline-emoji-objects" data-inline="false"></span></li>
+                <li><span class="iconify" data-icon="whh:htmlfile" data-inline="false"></span></li>
+                <li><span class="iconify" data-icon="ic:round-developer-mode" data-inline="false"></span></li>
+                <li><span class="iconify" data-icon="oi:copywriting" data-inline="false"></span></li>
+            </ul>
+            
+            <ul id="tech_list" type="none">
+                <li><span class="iconify" data-icon="cib:java" data-inline="false"></span></li>
+                <li><span class="iconify" data-icon="logos:c-plusplus" data-inline="false"></span></li>
+                <li><span class="iconify" data-icon="fa-brands:python" data-inline="false"></span></li>
+                <li><span class="iconify" data-icon="cib:mysql" data-inline="false"></span></li>
+                <li><span class="iconify" data-icon="icomoon-free:html-five" data-inline="false"></span></li>
+                <li><span class="iconify" data-icon="simple-icons:css3" data-inline="false"></span></li>
+                <li><span class="iconify" data-icon="ic:outline-android" data-inline="false"></span></li>
+            </ul>
+
+    </div>
     </div>
 </body>
 
