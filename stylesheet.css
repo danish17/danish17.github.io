@@ -7,11 +7,11 @@
 
 html{
     overflow: visible;
-    background: linear-gradient(-45deg, #091921, #091921, #132c36, #133d31);
+    background: linear-gradient(-45deg, #091921, #14303d, #132c36, #0c2c4b);
     /* background-image: url("res/background-tech-background.png"); */
     background-size: 600px;
     background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 5s ease infinite;
     background-blend-mode: screen;
 }
 
@@ -242,6 +242,65 @@ ul#menu li{
 #skills ul.skill_names li:hover{
     color: #fbb03b;
 }
+
+#publications #pub_list > li > h3{
+    transition: 0.3s all ease-in-out;
+    font-size: 16px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+}
+
+#publications #pub_list > li > h3:hover{
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    color: #fbb03b;
+    font-size: 16.1px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+}
+
+#publications #pub_list > li > h4{
+    font-size: 14px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+}
+
+#publications #pub_list > li > h4 {
+    padding-bottom: 20px;
+}
+
+#publications > img{
+    z-index: -100;
+    opacity: 0.5;
+}
+
+#publications #download_btn{
+    transition: 0.3s all ease-in-out;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding: 5px 5px 5px 5px;
+    height: 40px;
+    width: auto;
+    background-color: #fbb03b;
+    border: none;
+    border-radius: 2%;
+    left:40px;
+    cursor: auto;
+    margin-top: 10px;
+}
+
+#publications #download_btn:hover{
+   transition: 0.3s all ease-in-out;
+   box-shadow: 5px 5px #091921;
+   background-color: #10193E;
+   color: white !important;
+   cursor: pointer;
+}
+
+#publications #download_btn:hover a{
+    color: white !important;
+ }
 
 
 @keyframes gradient {
