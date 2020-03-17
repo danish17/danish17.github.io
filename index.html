@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" href="res/header_avatar.png" type="image/png" sizes="16x16">
     <script src="https://kit.fontawesome.com/c3c845c2cd.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
+
     <center><div id = "navbar">
         <ul id="menu">
             <li> <a href="#about">About</a></li>
             <li> <a href="#skills">Skills & Tools</a></li>
             <li> <a href="#publications">Publications</a></li>
-            <li> <a href="#about">Awards</a></li>
-            <li> <a href="#about">Certifications</a></li>
-            <li> <a href="#about">Projects</a></li>
+            <li> <a href="#awards">Awards & Certifications</a></li>
+            <li> <a href="#projects">Projects</a></li>
             <li> <a href="#about">Blog</a></li>
             <li> <a href="#about">Contact</a></li>
         </ul>
@@ -188,8 +190,91 @@
                 <a href="https://www.researchgate.net/profile/Danish_Shakeel3" target="_blank">Read my researches &emsp;<span class="iconify" data-icon="simple-icons:researchgate" data-inline="false"></span></a>
             </button>
         </div>
+        <div class="separator">
 
+        </div>
+
+</div>
+
+
+<div id="awards" class="tiles"> 
+    <p class="header">Awards & Certifications</p>
+    <img src="res/svg/award.svg" class="svg">
+    <div id="publics">
+        <ul id="pub_list" type="none">
+            <li><h3>🏆Digital India Cyber Security Champion</h3>
+                <h4>Issued by Government of India</h4></li>
+            <li><h3>🏆Research Presenter</h3>
+                    <h4>Issued by ICCR, Maharaja Ranjit Singh PTU, India</h4></li>
+            <li><h3>🏆1st Rank, Int'l Cyber Olympiad</h3>
+                    <h4>Issued by EduHeal</h4></li>
+            <li><h3>🏆3rd Rank, Int'l Science Olympiad</h3>
+                    <h4>Issued by EduHeal</h4></li>
+            <li><h3>🏆Best Student, Special Mountaineering Course</h3>
+                    <h4>Issued by Jawahar Institute of Mountaineering and Winter Sports</h4></li>
+            <li><h3>🏆1st Rank, National Science Exhibition</h3>
+                    <h4>Issued by Kendriya Vidyalaya Sangathan</h4></li>
+            <li><h3>✅IBM Data Science Professional Certificate</h3>
+            <h4>Issued by IBM via Coursera</h4></li>
+            <li><h3>✅The Fundamentals of Digital Marketing</h3>
+                <h4>Issued by Google</h4></li>
+            <li><h3>✅Google Analytics Individual Qualification</h3>
+                    <h4>Issued by Google</h4></li>
+            <li><h3>✅Digital Skills: AI</h3>
+                    <h4>Issued by Accenture via FutureLearn</h4></li> 
+            <li><h3>✅AWS Data Science Elements and DB Migration</h3>
+                    <h4>Issued by Amazon</h4></li>            
+            <li><h3>✅Web Development Using HTML</h3>
+                    <h4>Issued by SBS InfoSystems</h4></li>             
+        </ul>
+        <button id="download_btn">
+            <a href="https://www.youracclaim.com/users/danish-shakeel/badges" target="_blank">View my Badges&emsp;<i class="fas fa-certificate"></i></a>
+        </button>
     </div>
+    </div>
+
+    <div id="projects" class="tiles"> 
+        <p class="header">Projects</p>
+        <img src="res/svg/award.svg" class="svg">
+        <div id="publics">
+            <ul id="pub_list" type="none">   
+                <li><h3>✅Web Development Using HTML</h3>
+                        <h4>Issued by SBS InfoSystems</h4></li>             
+            </ul>
+            <button id="download_btn">
+                <a href="https://www.github.com/danish17" target="_blank">View my GitHub&emsp;<i class="fab fa-github"></i></a>
+            </button>
+        </div>
+        </div>
 </body>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+</script>
+
 
 </html>

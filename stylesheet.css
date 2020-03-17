@@ -6,7 +6,6 @@
 }
 
 html{
-    overflow: visible;
     background: linear-gradient(-45deg, #091921, #14303d, #132c36, #0c2c4b);
     /* background-image: url("res/background-tech-background.png"); */
     background-size: 600px;
@@ -17,7 +16,6 @@ html{
 
 body{
     height: 100%;
-    overflow: visible;
     min-height: 100%;
 }
 
@@ -301,6 +299,89 @@ ul#menu li{
 #publications #download_btn:hover a{
     color: white !important;
  }
+
+
+ #awards #pub_list > li > h3{
+    transition: 0.3s all ease-in-out;
+    font-size: 16px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+}
+
+#awards #pub_list > li > h3:hover{
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    color: #fbb03b;
+    font-size: 16.1px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+}
+
+#awards #pub_list > li > h4{
+    font-size: 14px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+}
+
+#awards #pub_list > li > h4 {
+    padding-bottom: 20px;
+}
+
+ #awards #download_btn{
+    transition: 0.3s all ease-in-out;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding: 5px 5px 5px 5px;
+    height: 40px;
+    width: auto;
+    background-color: #fbb03b;
+    border: none;
+    border-radius: 2%;
+    left:40px;
+    cursor: auto;
+    margin-top: 10px;
+}
+
+ #awards #download_btn:hover{
+    transition: 0.3s all ease-in-out;
+    box-shadow: 5px 5px #091921;
+    background-color: #10193E;
+    color: white !important;
+    cursor: pointer;
+ }
+ 
+ #awards #download_btn:hover a{
+     color: white !important;
+  }
+
+  #projects #download_btn{
+    transition: 0.3s all ease-in-out;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding: 5px 5px 5px 5px;
+    height: 40px;
+    width: auto;
+    background-color: #fbb03b;
+    border: none;
+    border-radius: 2%;
+    left:40px;
+    cursor: auto;
+    margin-top: 10px;
+}
+
+ #projects #download_btn:hover{
+    transition: 0.3s all ease-in-out;
+    box-shadow: 5px 5px #091921;
+    background-color: #10193E;
+    color: white !important;
+    cursor: pointer;
+ }
+ 
+ #projects #download_btn:hover a{
+     color: white !important;
+  }
 
 
 @keyframes gradient {
