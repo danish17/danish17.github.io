@@ -94,7 +94,7 @@ ul#menu li{
 
 #header #resume_btn:hover{
    transition: 0.3s all ease-in-out;
-   box-shadow: 5px 5px #091921;
+   box-shadow: 0px 5px 5px #091921;
    background-color: #10193E;
    color: white !important;
    cursor: pointer;
@@ -301,7 +301,7 @@ ul#menu li{
 
 #publications #download_btn:hover{
    transition: 0.3s all ease-in-out;
-   box-shadow: 5px 5px #091921;
+   box-shadow: 0px 5px 5px #091921;
    background-color: #10193E;
    color: white !important;
    cursor: pointer;
@@ -356,7 +356,7 @@ ul#menu li{
 
  #awards #download_btn:hover{
     transition: 0.3s all ease-in-out;
-    box-shadow: 5px 5px #091921;
+    box-shadow: 0px 5px 5px #091921;
     background-color: #10193E;
     color: white !important;
     cursor: pointer;
@@ -386,7 +386,7 @@ ul#menu li{
 
  #projects #download_btn:hover{
     transition: 0.3s all ease-in-out;
-    box-shadow: 5px 5px #091921;
+    box-shadow: 0px 5px 5px #091921;
     background-color: #10193E;
     color: white !important;
     cursor: pointer;
@@ -416,7 +416,7 @@ ul#menu li{
     opacity: 1;
     transition:0.3s all ease-in-out;
     transform:scale(1.01) translateY(-5px);
-    box-shadow: 5px 5px #303030;
+    box-shadow: 0px 5px 10px 5px #5c5c5c;
 }
 
 .card>p{
