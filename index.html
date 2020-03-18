@@ -13,17 +13,19 @@
 </head>
 <body>
 
-    <center><div id = "navbar">
+    <div id = "navbar">
         <ul id="menu">
             <li> <a href="#about">About</a></li>
             <li> <a href="#skills">Skills & Tools</a></li>
             <li> <a href="#publications">Publications</a></li>
             <li> <a href="#awards">Awards & Certifications</a></li>
             <li> <a href="#projects">Projects</a></li>
-            <li> <a href="#about">Blog</a></li>
+            <li> <a href="#work">Work and Apps</a></li>
+            <li> <a href="#work">Showcase</a></li>
             <li> <a href="#about">Contact</a></li>
         </ul>
-    </div></center>
+        <div id="bottom_pane"></div>
+    </div>
 
     <div id = "header">
         <img src="res/header_orig.png" alt="Original Avatar" id="header_original">
@@ -235,16 +237,55 @@
 
     <div id="projects" class="tiles"> 
         <p class="header">Projects</p>
-        <img src="res/svg/award.svg" class="svg">
+        <img src="res/svg/project.svg" class="svg">
         <div id="publics">
-            <ul id="pub_list" type="none">   
-                <li><h3>✅Web Development Using HTML</h3>
-                        <h4>Issued by SBS InfoSystems</h4></li>             
-            </ul>
-            <button id="download_btn">
-                <a href="https://www.github.com/danish17" target="_blank">View my GitHub&emsp;<i class="fab fa-github"></i></a>
-            </button>
+            <div class="card">
+                <p>Multi-model Ensemble Fake News Detection</p>
+                <h2>A model to identify fake news using multiple classification techniques followed by a perceptron in a sequential ensemble meta-algorithmic manner.</h2>
+                <h3>Contribution: Project Lead, Research, Data Collection, Structuring, Analysis, Feature Engineering, Statistical Inferences, Model Development, Evaluation, Content Editing</h3>
+                <h2><i class="fab fa-python"></i>&emsp;<i class="fas fa-cloud">&emsp;</i>
+                    <i class="fas fa-robot">&emsp;</i><i class="fas fa-pen-nib"></i>
+                    &emsp;<i class="fas fa-database"></i></h2>
+                <button id="download_btn">
+                    <a href="https://www.github.com/danish17" target="_blank">View on GitHub&emsp;<i class="fab fa-github"></i></a>
+                </button>
+            </div> 
+
+            <div class="card">
+                <p>Personalized Drug Concentrations Predictor</p>
+                <h2>A model to predict drug level and/or dose to craft a personalized dose in order to aid traditional methods.</h2>
+                <h3>Contribution: Research, Data Collection, Structuring, Analysis, Feature Engineering, Statistical Inferences, Model Development, Evaluation, Content Editing, CLI Development</h3>
+                <h2><i class="fab fa-python"></i>&emsp;
+                    <i class="fas fa-robot">&emsp;</i><i class="fas fa-pen-nib"></i>
+                    &emsp;<i class="fas fa-database">&emsp;<span class="iconify" data-icon="logos:c-plusplus" data-inline="false"></span></i></h2>
+                <button id="download_btn">
+                    <a href="https://www.github.com/danish17" target="_blank">View on GitHub&emsp;<i class="fab fa-github"></i></a>
+                </button>
+            </div> 
+
+            <div class="card">
+                <p>Levenshtein Distance</p>
+                <h2>Implementation of Text Analysis with Levenshtein Distance in pure C.</h2>
+                <h3>Contribution: Project Lead, CLI Development, Documentation</h3>
+                <h2><span class="iconify" data-icon="logos:c" data-inline="false"></span></h2>
+                <button id="download_btn">
+                    <a href="https://www.github.com/danish17" target="_blank">View on GitHub&emsp;<i class="fab fa-github"></i></a>
+                </button>
+            </div> 
+
+            <div class="card">
+                <p>Intrusion Detection</p>
+                <h2>Intrusion detection system using Arduino Uno with mobile app.</h2>
+                <h3>Contribution: Project Lead, CLI Development,Arduino Development, Mechanics and Circuits, Documentation</h3>
+                <h2><span class="iconify" data-icon="logos:c" data-inline="false"></span>
+                &emsp;<span class="iconify" data-icon="cib:arduino" data-inline="false"></span>
+                &emsp;<span class="iconify" data-icon="fa-brands:android" data-inline="false"></span></h2>
+                <button id="download_btn">
+                    <a href="https://www.github.com/danish17" target="_blank">View on GitHub&emsp;<i class="fab fa-github"></i></a>
+                </button>
+            </div> 
         </div>
+        
         </div>
 </body>
 
