@@ -41,8 +41,9 @@ body{
     position: fixed;
     z-index: 1000;
     margin-top: 5px;
-    left:30%;
+    left:40%;
     padding: 10px 10px 10px 10px;
+    margin-botton: 5px;
 }
 
 #navbar ul#menu li a{
@@ -222,6 +223,10 @@ ul#menu li{
     display: inline-block !important;
     padding: 10px 10px 10px 10px;
 }
+
+#skills .header{
+    margin-top: 15px;
+}
 #skills ul{
     margin-top: 20px;
     transition: 0.3s all ease-in-out;
@@ -328,6 +333,9 @@ ul#menu li{
     font-weight: 600;
 }
 
+#awards .header{
+    margin-top:15px;
+}
 #awards #pub_list > li > h4{
     font-size: 14px;
     font-family: 'Montserrat',sans-serif;
@@ -448,6 +456,170 @@ ul#menu li{
 
 #projects #publics{
     display: flex;
+}
+
+#projects{
+    margin-bottom: 100px;
+}
+
+#work_apps .card #download_btn{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    transition: 0.3s all ease-in-out;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 5px 5px 5px;
+    height: 40px;
+    width: auto;
+    background-color: #fbb03b;
+    border: none;
+    border-radius: 5px;
+    cursor: auto;
+    top: 80%;
+}
+
+
+ #work_apps #download_btn:hover{
+    transition: 0.3s all ease-in-out;
+    box-shadow: 0px 5px 5px #091921;
+    background-color: #10193E;
+    color: white !important;
+    cursor: pointer;
+ }
+ 
+ #work_apps #download_btn:hover a{
+     color: white !important;
+  }
+
+#work_apps #publics{
+    display: flex;
+}
+
+#projects{
+    margin-bottom: 100px;
+}
+
+#work_apps #publics > .card:hover{
+    height:400px;
+    border-radius: 10px;
+}
+
+#work_apps #publics > .card:hover img{
+    transition: 0.3s all ease-in-out;
+    animation-delay: 1.5;
+    opacity:1;
+}
+
+#work_apps #publics img{
+    margin-top:30px;
+    transition: 0.3s all ease-in-out;
+    width:60px;
+    height:60px;
+    opacity: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#work_apps #publics > .card #tech_invent{
+    width: 150px;
+    height: 100px;
+}
+
+#contact{
+    opacity: 1;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact input{
+    width: 500px;
+    border: none;
+    border-radius: 10px;
+    height: 20px;
+    outline: none;
+    padding: 5px 5px 5px 5px;
+}
+
+#contact input[type="text"]{
+    transition: 0.3s all ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact input[type="text"]:focus{
+    transition: 0.3s all ease-in-out;
+    color: white;
+    background-color: #091921;
+ }
+
+ #contact textarea{
+   height: 200px;
+    word-wrap: break-word;
+ }
+
+ #contact textarea{
+    transition: 0.3s all ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px 5px 5px 5px;
+    width:500px;
+  }
+
+#contact textarea:focus{
+    transition: 0.3s all ease-in-out;
+    color: white;
+    background-color: #091921;
+ }
+
+#contact .ibtn{
+    transition: 0.2s all ease-in-out;
+    background-color: #091921;
+    color: white;
+    width: 50px;
+    height: 30px;
+}
+
+
+#contact .ibtn:hover{
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    background-color: #fbb03b;
+    color: #091921;
+    width: 50px;
+    height: 30px;
+}
+
+#footer{
+    width: 100%;
+    background-color: #091921;
+    height:100px;
+    opacity: 1;
+    padding: 10 10 0 0;
+}
+
+#footer>img{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#footer>ul{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#footer>ul>li{
+    display: block;
+}
+
+#footer>ul>li>a{
+    font-size: 12px;
+    padding: 0 0 0 0;
+    display: block;
+    left: 0;
 }
 
 @keyframes gradient {
