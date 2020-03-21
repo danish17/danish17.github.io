@@ -402,7 +402,7 @@ html{
     position: relative;
     margin-top: 50px;
     width: 80%;
-    height: 210px;
+    height: 250px;
     border-radius: 15px;
     background-color: #fff;
     opacity: 1;
@@ -556,8 +556,21 @@ html{
 }
 
 #footer>ul>li>a{
-    font-size: 1.5vh;
+    color: white;
+    font-size: 1.2vh;
     padding: 0 0 0 0;
     display: inline;
     left: 0;
+}
+
+#contact #desktop_form{
+    display: none;
+}
+
+#contact #mobile_contact{
+    padding: 0px 10px 10px 10px;
+}
+
+#contact #mobile_contact a{
+    color: white;
 }
