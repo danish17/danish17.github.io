@@ -1,0 +1,563 @@
+#navbar{
+    display: none;
+}
+ a
+ {
+   text-decoration: none;
+   color: #232323;
+   font-family: 'Montserrat',sans-serif;
+   transition: color 0.3s ease;
+   display: block;
+ }
+ 
+ a:hover
+ {
+   color: tomato;
+ }
+ 
+ #menuToggle
+ {
+   display: block;
+   position: fixed;
+   top: 10px;
+   right: 10px;
+   
+   z-index: 1;
+   
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+ 
+ /*
+  * Just a quick hamburger
+  */
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #cdcdcd;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   opacity: 1;
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ {
+     border-radius: 5px;
+   position: absolute;
+   width: 200px;
+   margin: -100px 0 0 0;
+   padding: 30px;
+   padding-top: 125px;
+   right: -50px;
+   
+   background: #ededed;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+   
+   transform-origin: 0% 0%;
+   transform: translate(100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+   padding: 0px 0;
+   font-size: 1.5vh;
+ }
+ 
+ /*
+  * And let's fade it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+   transform: scale(1.0, 1.0);
+   opacity: 1;
+ }
+ 
+html{
+    background-image: url("res/background-tech-background.png");
+    background-color: #091921;
+    background-blend-mode: screen;
+    background-size: 100%;
+}
+
+#header_original{
+    display: none;
+}
+
+#header_avatar{
+    height: 100px;
+}
+
+.svg{
+    display: none;
+}
+
+#header{
+    display: flex;
+    position: relative;
+    padding: 0 0 0 0;
+    text-shadow: 2px;
+}
+
+#mobile_header{
+    color: white;
+    font-size: 1.7vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#header #resume_btn{
+    transition: 0.3s all ease-in-out;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding: 5px 5px 5px 5px;
+    height: 40px;
+    width: auto;
+    background-color: #fbb03b;
+    border: none;
+    border-radius: 2%;
+    left:40px;
+    cursor: auto;
+    margin-top: 10px;
+}
+
+#header #resume_btn:focus{
+    transition: 0.3s all ease-in-out;
+    box-shadow: 0px 5px 5px #091921;
+    background-color: #10193E;
+    color: white !important;
+    cursor: pointer;
+ }
+
+ #header #resume_btn:focus a{
+    color: white !important;
+ }
+
+ #header #big_text{
+    font-size: medium;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vh;
+    font-weight: 600;
+    margin-left: 3px;
+}
+
+#header #text{
+    display: block;
+    padding-left: 0px;
+}
+
+#header #small_text{
+    display: none;
+}
+
+#social_bar{
+    display: none;
+}
+
+.tiles{
+    transition: 0.9s all ease-in-out;
+    padding: 0 0 0 0;
+    opacity: 1;
+    display: block;
+}
+
+.tiles .header{
+    position: relative;
+    font-size: 4vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+ 
+.tiles .info_class{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.7vh;
+    color: white;
+    left: 0;
+    padding: 0 0 0 0;
+}
+
+.tiles ul{
+    color: white;
+    font-size: 1.5vh;
+}
+
+.tiles li{
+    display: inline;
+}
+
+#skills #inner_list{
+    position: relative;
+    display: inline-block !important;
+    padding: 10px 10px 10px 10px;
+}
+
+#skills .header{
+    margin-top: 5%;
+}
+#skills ul{
+    margin-top: 5px;
+    transition: 0.3s all ease-in-out;
+    opacity: 1;
+} 
+
+#skills #inner_lis ul.skill_names{
+    display: inline;
+}
+
+#skills ul.skill_names{
+    opacity: 1;
+    font-family: 'Montserrat',sans-serif;
+    font-size:1.7vh;
+}
+
+#skills #skills_list,#tech_list,#tools_list{
+    margin: 0 3 0 0;
+    margin-top: 0;
+    padding: 0 0 0 0;
+}
+
+#skills ul.skill_names li{
+    cursor: pointer;
+    display:block;
+    font-size: 1.7vh;
+}
+
+#publications #pub_list > li > h3{
+    transition: 0.3s all ease-in-out;
+    font-size: 1.7vh;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+}
+
+#publications #pub_list > li > h3{
+    transition: 0.3s all ease-in-out;
+    font-size: 1.5vh;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+}
+
+#publications #pub_list > li > h4{
+    font-size: 1.5vh;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+}
+
+#publications #download_btn{
+    transition: 0.3s all ease-in-out;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding: 5px 5px 5px 5px;
+    height: 40px;
+    width: auto;
+    background-color: #fbb03b;
+    border: none;
+    border-radius: 2%;
+    left:40px;
+    cursor: auto;
+    margin-top: 10px;
+}
+
+
+#pub_list{
+    padding: 0 0 0 0;
+}
+
+#awards #pub_list > li > h3{
+    transition: 0.3s all ease-in-out;
+    font-size: 1.7vh;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+}
+
+
+#awards .header{
+    margin-top:10%;
+}
+#awards #pub_list > li > h4{
+    font-size: 1.5vh;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+}
+
+#awards #pub_list > li > h4 {
+    padding-bottom: 5px;
+}
+
+ #awards #download_btn{
+    transition: 0.3s all ease-in-out;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding: 5px 5px 5px 5px;
+    height: 40px;
+    width: auto;
+    background-color: #fbb03b;
+    border: none;
+    border-radius: 2%;
+    left:40px;
+    cursor: auto;
+    margin-top: 10px;
+}
+
+#projects .card #download_btn{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    transition: 0.3s all ease-in-out;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 5px 5px 5px;
+    height: 40px;
+    width: auto;
+    background-color: #fbb03b;
+    border: none;
+    border-radius: 5px;
+    cursor: auto;
+    top: 80%;
+}
+
+
+.card{
+    cursor:pointer;
+    transition:0.3s all ease-in-out;
+    display:block;
+    content:" ";
+    position: relative;
+    margin-top: 50px;
+    width: 80%;
+    height: 210px;
+    border-radius: 15px;
+    background-color: #fff;
+    opacity: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.card>p{
+    font-family:'Montserrat',sans-serif;
+    font-size:1.7vh;
+    color: #091921;
+    font-weight: 900;
+}
+
+.card>h2{
+    font-family:'Montserrat',sans-serif;
+    font-size:1.5vh;
+    color: #143a4d;
+    font-weight: 600;
+}
+
+.card>h3{
+    font-family:'Montserrat',sans-serif;
+    font-size:1.5vh;
+    color: #175879;
+    font-weight: 400;
+}
+
+#projects #publics{
+    display:  block;
+}
+
+#work_apps .card #download_btn{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    transition: 0.3s all ease-in-out;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 5px 5px 5px;
+    height: 40px;
+    width: auto;
+    top: 80%;
+    background-color: #fbb03b;
+    border: none;
+    border-radius: 5px;
+    cursor: auto;
+}
+ 
+#work_apps #publics{
+    display: block;
+}
+
+#projects{
+    margin-bottom: 10px;
+}
+
+#work_apps #publics img{
+   display: none;
+}
+
+#contact{
+    opacity: 1;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact input{
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 20px;
+    outline: none;
+    padding: 5px 5px 5px 5px;
+}
+
+#contact input[type="text"]{
+    transition: 0.3s all ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact input[type="text"]:focus{
+    transition: 0.3s all ease-in-out;
+    color: white;
+    background-color: #091921;
+ }
+
+ #contact textarea{
+   height: 200px;
+    word-wrap: break-word;
+ }
+
+ #contact textarea{
+    transition: 0.3s all ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px 5px 5px 5px;
+    width:80%;
+  }
+
+#contact textarea:focus{
+    transition: 0.3s all ease-in-out;
+    color: white;
+    background-color: #091921;
+ }
+
+#contact .ibtn{
+    transition: 0.2s all ease-in-out;
+    background-color: #fbb03b;
+    color: white;
+    width: 50px;
+    height: 30px;
+}
+
+
+#contact .ibtn:focus{
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    color: #091921;
+    width: 50px;
+    height: 30px;
+}
+
+#footer{
+    width: 100%;
+    background-color: #091921;
+    height:100px;
+    opacity: 1;
+    padding: 10 10 0 0;
+}
+
+#footer>img{
+    height: 50px;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#footer>ul{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#footer>ul>li{
+    display: inline;
+}
+
+#footer>ul>li>a{
+    font-size: 1.5vh;
+    padding: 0 0 0 0;
+    display: inline;
+    left: 0;
+}

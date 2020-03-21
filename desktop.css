@@ -19,12 +19,23 @@ body{
     min-height: 100%;
 }
 
+#mob_nav{
+    display: none;
+}
+
+#mobile_header{
+    display: none;
+}
+
 .separator{
     content: " ";
     height: 250px;
     width: 100%;
 }
 
+.menu{
+    display: none;
+}
 
 #navbar #bottom_pane{
     content:" ";
