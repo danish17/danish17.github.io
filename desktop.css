@@ -203,6 +203,8 @@ ul#menu li{
     left:50%;
     width: 600px;
     height: 600px;
+    opacity: 0.6;
+    z-index: -1;
 }
 
 .tiles .header{
