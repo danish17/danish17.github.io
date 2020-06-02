@@ -60,7 +60,7 @@ body{
     width: 30vh;
     height: 30vh;
     position: absolute;
-    margin-top: 5vh;
+    margin-top: 8vh;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -563,11 +563,7 @@ body{
     color: green;
   }
 
-  #graphics-card-container{
-    height: 400px;
-  }
   .card.design-card{
-    min-width: 300px !important;
     padding: unset;
     z-index: 5555;
     overflow: hidden;
@@ -579,10 +575,13 @@ body{
     margin-bottom: 10px;
   }
 
+  #graphics-card-container{
+    min-width: 400px !important;
+  }
+
   .card.design-card>img{
     position: relative;
     width: 100% !important;
-    height: 100% !important;
     margin-top: 0 !important;
     left: 50%;
     transform: translateX(-50%);
@@ -738,7 +737,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     flex-wrap: wrap;
   }
 
@@ -746,7 +745,7 @@ body{
     position: relative;
     padding: 10px 0px 0px 0px;
     font-family: 'Lato',sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 0;
     font-weight: 400;
   }

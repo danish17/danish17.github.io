@@ -571,7 +571,6 @@ body{
   .card.design-card>img{
     position: relative;
     width: 100% !important;
-    height: 100% !important;
     margin-top: 0 !important;
     left: 50%;
     transform: translateX(-50%);
