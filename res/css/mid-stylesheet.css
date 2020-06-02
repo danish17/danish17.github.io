@@ -290,7 +290,7 @@ body{
   }
   .content__container__list {
     margin-top: 0;
-    padding-left: 9%;
+    padding-left: 90px;
     text-align: left;
     list-style: none;
     -webkit-animation-name: change;
@@ -764,9 +764,11 @@ body{
 
 #about p{
   margin-top: 40px;
-  margin-left: 30%;
+  margin-left: 25%;
   font-family: 'Lato',sans-serif;
   font-size: 18px;
+  width: 70%;
+  text-align: justify;
 }
 
 #about #about-me{
