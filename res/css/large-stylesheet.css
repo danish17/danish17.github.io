@@ -920,6 +920,8 @@ input:focus ~ .bar:before, input:focus ~ .bar:after, textarea:focus ~ .bar:befor
 
 .footer ul{
   position: absolute;
+  left: 40px;
+  top: 40px;
 }
 
 .footer ul li{
